@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Node Quiz Login Form</title>
+<link rel="stylesheet" href="stylesheets\Registerstyle.css">
+<script src="javascripts\jquery.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {	 
+	$('#log1').click(function(){
+	    $('#form').submit();
+	}); 
+});
+
+</script>
+
+</head>
+
+
+
+<body>
+	<span href="#" class="button" id="toggle-register">Register</span>
+
+<div id="Register">
+  <div id="triangle"></div>
+  <h1>Register</h1>
+  <form id="form" action="/registeraction" method="post">
+
+    <input id='fn' type="text" name="fn" placeholder="Full Name"/>
+   		 <div id="fnvalid" align="center"></div>    
+    <input id="un" type="text" name="un" placeholder="Email Address"  />
+    	 <div id="unvalid" align="center"></div>
+	<input id="ph" type="text" name="ph" placeholder="Phone Number"  />
+    	 <div id="phvalid" align="center"></div>	 
+    <input id="pwd" type="password" name="pw" placeholder="Password"  />
+    	 <div id="pwdvalid" align="center"></div>
+    <!--input type="submit" value="Register" /-->
+    <div id="log1" align="center" >Register</div>
+    <br><div align="center"><a href='/login'>Have an Account? Then Login Here</a></div>
+  </form>
+</div>
+  <script src='javascripts\jquery.js'></script>
+
+  <script src="javascripts\Register.js"></script>
+</body>
+</html>
